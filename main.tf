@@ -1,9 +1,9 @@
-data "aws_availability_zones" "available" {
-  state = "available"
+provider "aws" {
+  region = var.region
 }
 
-provider "aws" {
-  region = "var.region"
+data "aws_availability_zones" "available" {
+  state = "available"
 }
 
 # Create VPC
