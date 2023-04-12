@@ -2,6 +2,19 @@
 
 
 443
-
+2
+20
 
 80
+
+terraform apply -target=aws_vpc.main -auto-approve
+
+terraform apply -target=aws_subnet.public -auto-approve
+
+terraform apply -target=aws_subnet.private -auto-approve
+
+terraform plan
+
+terraform apply -auto-approve
+
+terraform destroy -auto-approve

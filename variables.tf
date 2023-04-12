@@ -47,3 +47,25 @@ variable "tags" {
   description = "A map of tags to add to all resources."
   default     = {}
 }
+
+variable "ami" {
+  type = string
+  description = "ami for launch temp"
+}
+
+
+variable "keypair" {
+  type = string
+  description = "key-pair for asg"
+}
+
+variable "master-username" {
+  type = string
+  description = "master password  for rds"
+}
+
+
+variable "master-password" {
+  type = string
+  description = "master password  for rds"
+}
